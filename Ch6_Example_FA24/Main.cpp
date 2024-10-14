@@ -11,7 +11,7 @@ int main()
 	cout << "You have 3 chances to guess the number" << endl;
 	int tryCount = 0;
 
-	srand(time(NULL));
+	srand(time(NULL));		// Seed the random number generator
 	int number = rand() % 100 + 1;
 	int guess = 0;
 

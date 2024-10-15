@@ -5,24 +5,12 @@ using namespace std;
 
 int main()
 {
-	ifstream inFile;
-	inFile.open("InputEOFExample.dat");
+	int num = 1;
 
-	char data;
-
-	if (!inFile)
+	while (num != 0)
 	{
-		cout << "Can't find file!" << endl;
-
-		return 1;
-	}
-
-	inFile >> data; // Priming read
-
-	while (inFile)
-	{
-		cout << data << endl;
-		inFile >> data;
+		std::cout << num << " ";
+		num = num + 2;
 	}
 
 	return 0;
